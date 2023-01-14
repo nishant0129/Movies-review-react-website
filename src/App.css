@@ -1,0 +1,96 @@
+/* .App{
+    text-align: center;
+    background-color:white;
+    color:white;
+  
+}
+.header{
+    background-color:rgba(30, 25, 63, 0.986);
+}
+
+
+h1{
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 8px;
+}
+
+.movie{
+    background-color:rgb(224, 206, 206);   
+    color:black;
+    border: 1px solid rgb(42, 21, 180);
+    padding: 5px;
+    font-weight: bold;
+    text-align:start;
+    width: 22%;
+    margin-top: 15px;
+}
+.movie img{
+    height:200px;
+    width: 100%;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,700&display=swap');
+
+
+.App{
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.807);
+    color:white;
+  
+}
+.header{
+    height: 80px;
+    background-color:black;
+    margin-bottom: 10px;
+}
+
+
+h1{
+    margin:auto;
+    margin-top: 15px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.movie{
+    max-height: fit-content;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.508);
+    color:#1890ff;
+    font-weight: bold;
+    text-align:center;
+    border-radius: 10px;
+}
+.movie img{
+    border:10px solid black;
+    margin:auto;
+    display: block;
+    margin-bottom: 30px;
+    height:300px;
+    width: 80%;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.movie img:hover {
+    filter: blur(3px);
+    transform: scale(1.13);
+    transition-property: all;
+    transition-duration: 0.2s;
+}
